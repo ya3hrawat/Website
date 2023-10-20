@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+} 
+
+body {
+    height: 170vh;
+    width: 100vw;
+}
+
+.head-container {
+    display: flex;
+    padding: 1%;
+    justify-content: space-around;
+    background-color: #1F2937;
+}
+
+.head-logo h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.head-elements {
+    width: 50%;
+    height: 100%;
+}
+
+.head-elements ul {
+    display: flex;
+    height: 29px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.head-elements ul li {
+    list-style-type: none;
+}
+
+.head-elements ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #E5E7EB;
+    border-left: 2px solid #1F2937;
+    font-weight: 200;
+    padding-left: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.head-elements ul li a:hover {
+    border-left: 2px solid white;
+}
+
+.section1-container {
+    display: flex;
+    height: 35vh;
+    width: 100%;
+    background-color: #1F2937;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.section1-container .left-box {
+    background-color: inherit;
+    height: 75%;
+    width: 30%;
+}
+
+.section1-container .left-box h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+}
+
+.section1-container .left-box p {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 200;
+    padding: 2% 0;
+}
+
+.section1-container .left-box button {
+    background-color: #3882F6;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.section1-container .left-box button:hover {
+    box-shadow: 0px 0px 5px whitesmoke;
+}
+
+.section1-container .right-box {
+    height: 75%;
+    width: 30%;
+    padding-bottom: 0%;
+}
+
+.section1-container .right-box .ig-box {
+    height: 100%;
+    width: 100%;
+    background-image: url(headerimg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section2-container {   
+    height: 60vh;
+    width: 100%;
+}
+
+.section2-container .info {
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+    font-size: 34px;
+    font-weight: 600;
+    color: #1F2937;
+    text-decoration: underline;
+    letter-spacing: 0.5px ;
+}
+
+.image-division {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-box {
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-frame {
+    height: 80%;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+}
+
+.img-frame:hover {
+    box-shadow: 0 0 20px 3px rgb(58, 54, 54);
+}
+
+.img1 {
+    background-image: url(img1.jpg);
+}
+
+.img2 {
+    background-image: url(img2.jpg);
+}
+
+.img3 {
+    background-image: url(img3.jpg);
+}
+
+.img4 {
+    background-image: url(img4.jpg);
+}
+
+.img-text {
+    padding: 8% 0;
+    text-align: center;
+    color: #1F2937;
+}
+
+.section3-container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.remarks {
+    padding-top: 1%;
+    padding-left: 30%;
+    font-weight: 500;
+}
+
+.section4-container {
+    height: 25vh;
+    width: 100%;
+    padding: 2% 0;
+    display: grid;
+    place-items: center;
+}
+
+.section4-container .sub-container {
+    background-color: #3B82F6;
+    height: 60%;
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 2%;
+}
+
+
+.section4-container .sub-container .left-box h2{
+    font-weight: 600;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.section4-container .sub-container .left-box p{
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 200;
+}
+
+.section4-container .sub-container .right-box button {
+    background-color: #3B82F6;
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    padding: 8px 20px   ;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+} 
+
+.section4-container .sub-container .right-box button:hover {
+    background-color: white;
+    color: #3B82F6;
+    box-shadow: 0 0 4px black;
+}
+
+footer {
+    display: grid;
+    place-items: center
+    ;
+    background-color: #1F2937;
+    height: 8vh;
+}
+
+footer p{
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 200;
+}
